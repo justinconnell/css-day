@@ -1,0 +1,172 @@
+@import url(./base.css);
+
+.main {
+  height: 100vh;
+  overflow-y: scroll;
+  margin: 0 30px;
+}
+
+.header__link {
+  color: var(--color-secondary);
+}
+
+.menu path,
+.close path,
+.cart path {
+  fill: var(--color-secondary);
+}
+
+.nav {
+  background: var(--color-secondary-bg);
+}
+
+.nav__list-item a {
+  color: var(--color-secondary);
+}
+
+.main__title {
+  font-size: 40px;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.shopping-cart-icon--primary g path {
+  fill: var(--color-primary);
+}
+
+.speakers__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.speaker__wrapper {
+  max-width: 460px;
+}
+
+.speaker__photo {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 36px;
+}
+
+.speaker__photo--top {
+  object-position: top;
+}
+
+.speaker__name {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.speaker__company {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.speaker__bio {
+  font-size: 20px;
+}
+
+.speaker__bio,
+.speaker__company {
+  color: var(--color-text);
+}
+
+.speakers__wrapper {
+  column-gap: 10px;
+  row-gap: 40px;
+}
+
+.speaker__photo {
+  width: 210px;
+  height: 210px;
+  margin-bottom: 16px;
+}
+
+.speaker__name {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.speaker__company {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.speaker__bio {
+  font-size: 16px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .speaker__photo {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 36px;
+  }
+  .speakers__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 30px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .speaker__photo {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 36px;
+  }
+  .main__title {
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .speaker__photo {
+    width: 258px;
+    height: 280px;
+    margin-bottom: 36px;
+  }
+
+  .main__title {
+    font-size: 80px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .speaker__photo {
+    width: 310px;
+    height: 310px;
+    margin-bottom: 36px;
+  }
+
+  .speaker__name {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .speaker__company {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .speaker__bio {
+    font-size: 24px;
+  }
+
+  .main__title {
+    font-size: 100px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+}
